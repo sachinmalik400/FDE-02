@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Lock file (optional — keep for reproducible builds)
+# package-lock.json
+
+# CAP build output
+gen/
+dist/
+
+# SQLite local DB
+db.sqlite
+
+# MTA build output
+mta_archives/
+*.mtar
+
+# Local CAP config (contains credentials)
+.env
+default-env.json
+default-services.json
+.cdsrc-private.json
+
+# HANA deployment artefacts
+db/src/.hdiconfig
+db/src/.hdinamespace
+
+# VS Code
+.vscode/
+
+# SAP BAS / IDE
+.che/
+.archives/
+
+# OS
+.DS_Store
+Thumbs.db

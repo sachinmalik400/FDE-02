@@ -1,0 +1,28 @@
+{
+  "name": "my-btp-app_sam",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@sap/cds": "^10"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^3",
+    "@sap/cds-dk": "^10"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": { "database": ":memory:" }
+      }
+    },
+    "fiori": {
+      "preview": true
+    }
+  },
+  "private": true
+}
